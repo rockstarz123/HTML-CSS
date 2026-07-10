@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Grid</title>     
+    <title>CSS Grid</title>
     <link rel="stylesheet" href="Style/nav_style.css" />
+
     <style>
       .container {
         background-color: rgb(231, 228, 228);
@@ -13,6 +14,7 @@
         gap: 20px;
         margin: 20px auto;
       }
+
       .container2 {
         background-color: rgb(231, 228, 228);
         display: grid;
@@ -26,16 +28,16 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
       }
-      .left-grid2, .right-grid2{
-        display:grid;
+
+      .left-grid2,
+      .right-grid2 {
+        display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
       }
 
       .card {
         background: linear-gradient(135deg, #87ceeb, #1794e7);
-        margin: 0px;
-        /* background-color: skyblue; */
         height: 120px;
         display: flex;
         flex-direction: column;
@@ -43,10 +45,9 @@
         align-items: center;
         border-radius: 10px 1px;
       }
+
       .card2 {
         background: linear-gradient(135deg, #ff6347, #bb1e2b);
-        margin: 0px;
-        /* background-color: tomato; */
         height: 120px;
         display: flex;
         flex-direction: column;
@@ -56,41 +57,44 @@
         color: rgb(247, 237, 237);
       }
 
-      .card h2, p {
+      .card h2,
+      .card p,
+      .card2 h2,
+      .card2 p {
         margin: 5px 0;
       }
-      .card2 h2, p{
-        margin: 5px 0
-      }    
 
       .card:hover {
         transform: translateY(-2px) scale(1.05);
         background: linear-gradient(135deg, #4facfe, #3bdfe7);
         box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
       }
+
       .card2:hover {
         transform: translateY(-2px) scale(1.05);
         background: linear-gradient(135deg, #f86c39, #b6431a);
-        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3)
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
       }
 
       .right-grid {
         background: linear-gradient(135deg, #ff6347, #bb1e2b);
-        background-color: tomato;
         border-radius: 10px 0 0 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 25px;
         color: rgb(247, 237, 237);
+        text-align: center;
       }
-      .middle-grid{
+
+      .middle-grid {
         background: linear-gradient(135deg, #87ceeb, #1794e7);
         border-radius: 10px 2px;
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         font-size: 25px;
+        text-align: center;
       }
 
       .right-grid:hover {
@@ -98,14 +102,15 @@
         background: linear-gradient(135deg, #f86c39, #b6431a);
         box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
       }
+
       .middle-grid:hover {
-        transform: translateY(-1px)scale(1.05);
+        transform: translateY(-1px) scale(1.05);
         background: linear-gradient(135deg, #4facfe, #3bdfe7);
         box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
       }
-      
     </style>
   </head>
+
   <header>
     <nav>
       <ul>
@@ -117,118 +122,134 @@
       </ul>
     </nav>
   </header>
+
   <body>
+    <!-- First Grid -->
     <div class="container">
       <div class="left-grid">
         <div class="card">
-          <h2>Card-1</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Web Design</h2>
+          <p>Modern UI/UX</p>
+          <p>Responsive Layout</p>
         </div>
+
         <div class="card">
-          <h2>Card-2</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Frontend</h2>
+          <p>HTML, CSS & JS</p>
+          <p>Interactive Pages</p>
         </div>
+
         <div class="card">
-          <h2>Card-3</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Backend</h2>
+          <p>Node.js API</p>
+          <p>Database Support</p>
         </div>
+
         <div class="card">
-          <h2>Card-4</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>E-Commerce</h2>
+          <p>Online Store</p>
+          <p>Secure Checkout</p>
         </div>
+
         <div class="card">
-          <h2>Card-5</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>SEO Service</h2>
+          <p>Better Rankings</p>
+          <p>More Visitors</p>
         </div>
+
         <div class="card">
-          <h2>Card-6</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Cloud Hosting</h2>
+          <p>Fast Servers</p>
+          <p>99.9% Uptime</p>
         </div>
+
         <div class="card">
-          <h2>Card-7</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Analytics</h2>
+          <p>Traffic Reports</p>
+          <p>Performance Data</p>
         </div>
+
         <div class="card">
-          <h2>Card-8</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Security</h2>
+          <p>SSL Protection</p>
+          <p>Daily Backups</p>
         </div>
+
         <div class="card">
-          <h2>Card-9</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Support</h2>
+          <p>24/7 Assistance</p>
+          <p>Quick Response</p>
         </div>
       </div>
 
       <div class="right-grid">
         <div class="big-card">
-          <h2>Big Card</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Complete Digital Solution</h2>
+          <p>Website Design & Development</p>
+          <p>Everything Your Business Needs</p>
         </div>
       </div>
     </div>
 
+    <!-- Second Grid -->
     <div class="container2">
-      <!-- .left-grid2>.card2*4>h2{Card-$}+p{Description-1}+p{Description-2}        <div class="left-grid2"> -->
       <div class="left-grid2">
         <div class="card2">
-          <h2>Card-1</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Mobile Apps</h2>
+          <p>Android & iOS</p>
+          <p>Native Experience</p>
         </div>
+
         <div class="card2">
-          <h2>Card-2</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Brand Identity</h2>
+          <p>Logo Design</p>
+          <p>Brand Guidelines</p>
         </div>
+
         <div class="card2">
-          <h2>Card-3</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Content Writing</h2>
+          <p>SEO Articles</p>
+          <p>Marketing Copy</p>
         </div>
+
         <div class="card2">
-          <h2>Card-4</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Email Marketing</h2>
+          <p>Campaign Setup</p>
+          <p>Customer Reach</p>
         </div>
       </div>
 
       <div class="middle-grid">
         <div class="card3">
-          <h2>Card-5</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Featured Service</h2>
+          <p>Custom Web Solutions</p>
+          <p>Built for Business Growth</p>
         </div>
       </div>
 
       <div class="right-grid2">
         <div class="card2">
-          <h2>Card-1</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Graphic Design</h2>
+          <p>Creative Visuals</p>
+          <p>Print & Digital</p>
         </div>
+
         <div class="card2">
-          <h2>Card-2</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Social Media</h2>
+          <p>Content Strategy</p>
+          <p>Audience Growth</p>
         </div>
+
         <div class="card2">
-          <h2>Card-3</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Consulting</h2>
+          <p>Business Planning</p>
+          <p>Expert Advice</p>
         </div>
+
         <div class="card2">
-          <h2>Card-4</h2>
-          <p>Description-1</p>
-          <p>Description-2</p>
+          <h2>Maintenance</h2>
+          <p>Regular Updates</p>
+          <p>Bug Fixes</p>
         </div>
       </div>
     </div>
