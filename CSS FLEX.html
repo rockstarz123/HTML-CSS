@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex layout</title>
+    <link rel="stylesheet" href="Style/nav_style.css">
+    <style>
+        .container{
+            display: flex;
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            justify-content:  space-around;
+             
+
+        }
+        .box{
+            border: 2px solid green;
+            height: 50px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+          <li><a href="/banner.html">Hero Section</a></li>
+          <li><a href="/grid.html">Grid Section</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </nav>
+
+    <div>
+        <p>This is a simple flex layout example.</p>
+    </div>
+
+    <!-- ul.container>li.item*5{item $} -->
+    <!-- <ul class="container">
+        <li class="item">item 1</li>
+        <li class="item">item 2</li>
+        <li class="item">item 3</li>
+        <li class="item">item 4</li>
+        <li class="item">item 5</li>
+    </ul> -->
+
+    <!-- .container>.box*5{box-$} -->
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+    </div>
+
+
+    
+    
+</body>
+</html>
