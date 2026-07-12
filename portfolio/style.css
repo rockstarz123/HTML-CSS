@@ -1,0 +1,70 @@
+/* Restore Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(238, 234, 234) ;
+    font: 'Open sans';
+     
+}
+/* Common Style  */
+.common-btn{
+    padding: 8px 12px;
+    background-color: #FD6E0A;
+    border-radius: 10px;
+    text-align: center;
+    color: white;    
+    border: none;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.space-btn{
+    padding: 8px 12px;
+    border: 1px solid #FD6E0A;
+    border-radius: 10px;
+    text-align: center;
+    color: #FD6E0A;
+}
+img{
+    max-width: 100%;
+}
+
+
+/* Navbar Style  */
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+nav ul li{
+    list-style: none;
+    color: rgb(159, 151, 151);
+}
+.nav-content a{
+    text-decoration: none;
+}
+.logo-r{
+    color: #FD6E0A;
+}
+nav h2{
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+/* Hero Section Style  */
+.hero-section{
+    display: flex;
+}
+
+
