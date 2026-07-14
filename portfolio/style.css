@@ -6,9 +6,10 @@
 }
 body{
     background-color:rgb(238, 234, 234) ;
-    font: 'Open sans';
+    font: "Open sans", sans-serif;
      
 }
+
 /* Common Style  */
 .common-btn{
     padding: 8px 12px;
@@ -17,6 +18,7 @@ body{
     text-align: center;
     color: white;    
     border: none;
+    font-size: 20px;
 }
 .container{
     max-width: 1200px;
@@ -24,9 +26,10 @@ body{
     padding: 20px;
 }
 .space-btn{
-    padding: 8px 12px;
+    padding: 7px 11px;
     border: 1px solid #FD6E0A;
     border-radius: 10px;
+    font-size: large;
     text-align: center;
     color: #FD6E0A;
 }
@@ -44,11 +47,12 @@ nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 60px;
 }
 nav ul li{
     list-style: none;
     color: rgb(159, 151, 151);
+    font-size: 20px;
 }
 .nav-content a{
     text-decoration: none;
@@ -57,8 +61,9 @@ nav ul li{
     color: #FD6E0A;
 }
 nav h2{
-    font-weight: 800;
-    letter-spacing: 1px;
+    font-weight: 1000;
+    /* letter-spacing: 1px; */
+    font-size: 35px;
 }
 
 
@@ -66,5 +71,8 @@ nav h2{
 .hero-section{
     display: flex;
 }
-
-
+.hero-section-left{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
