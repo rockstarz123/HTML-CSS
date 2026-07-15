@@ -13,6 +13,7 @@ body {
 
 .container {
   max-width: 1200px;
+  background-color: #fff8f3;
   margin: auto;
   padding: 20px;
 }
@@ -135,4 +136,41 @@ nav ul li {
     top: 30px;
     left: 20px;
     height: 700px;
+}
+
+
+/* About Section Style  */
+
+.about-section {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 200px;
+  border-radius: 5px;
+  min-height: 400px;
+}
+.about-section h1 {
+  font-weight: 750;
+}
+.about-section p {
+  font-size: 17px;
+  color: rgb(105, 104, 104);
+  text-align: center;
+}
+.personal-info {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+.personal-info p{
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.info h6{
+  font-size: 18px;
+  color: #333;
 }
